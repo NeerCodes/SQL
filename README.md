@@ -1,7 +1,7 @@
-SQL Interview Questions and Concepts
-This document covers essential SQL concepts and commands, tailored for interview preparation. It includes practical examples, syntax, and common interview questions to help you master SQL.
+SQL Interview Guide
+This guide covers essential SQL concepts and commands, tailored for interview preparation. It includes practical examples, syntax, and common interview questions to help you master SQL.
 SQL Command Categories
-SQL commands are broadly categorized into five types: DDL, DML, DCL, TCL, and DQL. Below, each category is explained with examples and interview-focused insights.
+SQL commands are categorized into five types: DDL, DML, DCL, TCL, and DQL. Each is explained below with examples and interview-focused insights.
 1. Data Definition Language (DDL)
 
 Purpose: Modifies the structure of database objects (e.g., tables).
@@ -193,7 +193,7 @@ FULL JOIN ORDERS O ON C.ID = O.CUSTOMER_ID;
 
 
 SELF JOIN: Joins a table to itself.
-SELECT A.NAME, B.NAME
+SELECT A.NAME, B.NAME AS MANAGER
 FROM EMPLOYEES A, EMPLOYEES B
 WHERE A.MANAGER_ID = B.ID;
 
@@ -373,11 +373,10 @@ WHERE TD.TDATE > '2023-01-01';
 
 Tips for SQL Interviews
 
-Practice Writing Queries: Be comfortable with writing complex queries involving joins, subqueries, and aggregates.
+Practice Writing Queries: Be comfortable with complex queries involving joins, subqueries, and aggregates.
 Understand Indexes: Know how indexes improve query performance but may slow down inserts/updates.
-Explain Your Thought Process: When solving problems, articulate how you approach the query, including optimization considerations.
+Explain Your Thought Process: Articulate your approach to solving queries, including optimization considerations.
 Know Database-Specific Syntax: Be aware of differences (e.g., MySQL’s LIMIT vs. SQL Server’s TOP).
 Test Your Queries: Use sample datasets to verify your queries return the expected results.
 
-This guide provides a comprehensive overview of SQL concepts and commands, with a focus on interview preparation. Practice these examples and questions to build confidence in your SQL skills.
-
+This guide provides a comprehensive overview of SQL concepts and commands for interview preparation. Download and practice these examples to build confidence in your SQL skills.
